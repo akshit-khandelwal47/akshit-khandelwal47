@@ -1,4 +1,4 @@
-# 💫 Hey,I'm Akshit Khandelwal
+#  Hey,I'm Akshit Khandelwal <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 
 # 💻 Tech Stack:
