@@ -1,5 +1,7 @@
 #  Hey,I'm Akshit Khandelwal <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
+👋 I'm a passionate and driven Software Engineer looking to solve some compelling problems. With a strong foundation in backend frameworks and cloud technologies, I excel in crafting innovative solutions for complex problem statements. 
+🚀 As a proactive problem solver, I've crafted and seamlessly integrated APIs into organizational products, optimizing workflow efficiencies and significantly reducing manual efforts. My strategic implementations have expedited processes and yielded substantial reductions in turnaround time, amplifying operational effectiveness.
 
 # 💻 Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
