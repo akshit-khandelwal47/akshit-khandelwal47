@@ -1,6 +1,6 @@
 #  Hey,I'm Akshit Khandelwal <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-👋 I'm a passionate and driven Software Engineer looking to solve some compelling problems. With a strong foundation in backend frameworks and cloud technologies, I excel in crafting innovative solutions for complex problem statements. 
+👋 I'm a passionate and driven Software Engineer looking to solve some compelling problems. With a strong foundation in backend frameworks and cloud technologies, I excel in crafting innovative solutions for complex problem statements.      
 🚀 As a proactive problem solver, I've crafted and seamlessly integrated APIs into organizational products, optimizing workflow efficiencies and significantly reducing manual efforts. My strategic implementations have expedited processes and yielded substantial reductions in turnaround time, amplifying operational effectiveness.
 
 # 💻 Tech Stack:
