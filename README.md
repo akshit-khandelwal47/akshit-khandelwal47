@@ -40,6 +40,36 @@ talking about:
 - Most of the code is written with Claude Code, under checked-in repo rules and a review pass on
   every pull request.
 
+### Open source
+
+Merged upstream:
+
+- **[Spring Cloud AWS #1727](https://github.com/awspring/spring-cloud-aws/pull/1727)**: after the
+  first `receive(queue, X.class)` on a queue, `SqsTemplate` converted every later receive on that
+  queue to the first call's class, because a per-queue cache left the class out of its key. The
+  conversion context is now built per call.
+- **[Haystack #4173](https://github.com/deepset-ai/haystack-core-integrations/pull/4173)**: Solr
+  stores int and float metadata in separate fields, so with ratings `[3, 4, 4.5, 5.0]` the filter
+  `rating >= 4` returned only `4`. Numeric filters now query both fields, so Solr returns the same
+  documents as the other Haystack stores.
+
+In review:
+
+- [Micrometer #8140](https://github.com/micrometer-metrics/micrometer/pull/8140): document that a
+  `MultiGauge` must stay referenced for its rows to keep reporting
+- [Spring Batch #5644](https://github.com/spring-projects/spring-batch/pull/5644): keep the time
+  zone of `ZonedDateTime` and `OffsetDateTime` in the execution context
+- [Spring AI #7274](https://github.com/spring-projects/spring-ai/pull/7274): honor the configured
+  dimensions in the Google GenAI and Vertex AI text embedding models
+- [pytest #15300](https://github.com/pytest-dev/pytest/pull/15300): fix the sha256 parametrize ID
+  strategy on strings with lone surrogates
+- [moto #10497](https://github.com/getmoto/moto/pull/10497): SQS FIFO deduplication IDs survive a
+  delete, and `DeduplicationScope` is honored
+- [testcontainers-python #1146](https://github.com/testcontainers/testcontainers-python/pull/1146):
+  create Ryuk once when containers start concurrently
+- [Haystack #4250](https://github.com/deepset-ai/haystack-core-integrations/pull/4250): Qdrant's
+  `count_unique_metadata_by_filter` accepts the `meta.` prefix
+
 ### Stack
 
 Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Claude API · Docker · AWS ·
