@@ -52,11 +52,13 @@ Merged upstream:
   stores int and float metadata in separate fields, so with ratings `[3, 4, 4.5, 5.0]` the filter
   `rating >= 4` returned only `4`. Numeric filters now query both fields, so Solr returns the same
   documents as the other Haystack stores.
+- **[Micrometer #8140](https://github.com/micrometer-metrics/micrometer/pull/8140)**: a change
+  coming in 1.18 lets a `MultiGauge`'s rows report NaN once the `MultiGauge` itself is garbage
+  collected. The `MultiGauge` Javadoc and the gauges docs now say to keep a reference to it for as
+  long as its rows should be reported. Due in 1.16.9.
 
 In review:
 
-- [Micrometer #8140](https://github.com/micrometer-metrics/micrometer/pull/8140): document that a
-  `MultiGauge` must stay referenced for its rows to keep reporting
 - [Spring Batch #5644](https://github.com/spring-projects/spring-batch/pull/5644): keep the time
   zone of `ZonedDateTime` and `OffsetDateTime` in the execution context
 - [Spring AI #7274](https://github.com/spring-projects/spring-ai/pull/7274): honor the configured
