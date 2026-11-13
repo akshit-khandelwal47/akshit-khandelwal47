@@ -56,9 +56,16 @@ Merged upstream:
   coming in 1.18 lets a `MultiGauge`'s rows report NaN once the `MultiGauge` itself is garbage
   collected. The `MultiGauge` Javadoc and the gauges docs now say to keep a reference to it for as
   long as its rows should be reported. Due in 1.16.9.
+- **[Haystack #4250](https://github.com/deepset-ai/haystack-core-integrations/pull/4250)**: the
+  Qdrant store's `count_unique_metadata_by_filter` looked field names up as given, so
+  `meta.category` counted nothing, while its `get_metadata_field_*` methods already accepted the
+  prefix. It now strips the `meta.` prefix first. Found by comparing the stores' metadata methods
+  against the in-memory store.
 
 In review:
 
+- [Micrometer #8192](https://github.com/micrometer-metrics/micrometer/pull/8192): scale the new
+  time-based `FunctionCounter` to each registry's time unit inside a `CompositeMeterRegistry`
 - [Spring Batch #5644](https://github.com/spring-projects/spring-batch/pull/5644): keep the time
   zone of `ZonedDateTime` and `OffsetDateTime` in the execution context
 - [Spring AI #7274](https://github.com/spring-projects/spring-ai/pull/7274): honor the configured
@@ -69,8 +76,6 @@ In review:
   delete, and `DeduplicationScope` is honored
 - [testcontainers-python #1146](https://github.com/testcontainers/testcontainers-python/pull/1146):
   create Ryuk once when containers start concurrently
-- [Haystack #4250](https://github.com/deepset-ai/haystack-core-integrations/pull/4250): Qdrant's
-  `count_unique_metadata_by_filter` accepts the `meta.` prefix
 
 ### Stack
 
